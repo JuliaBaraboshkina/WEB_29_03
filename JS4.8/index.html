@@ -27,6 +27,7 @@
             var val = e.target.value;
             var isValid = this.validate(val);
             this.setState({value: val, valid: isValid});
+            console.log(val);
         }
         render() {
             var color = this.state.valid===true?"red":"pink";
